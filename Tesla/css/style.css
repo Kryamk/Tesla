@@ -1,0 +1,129 @@
+@import "../fonts/clearsans/clearsans.css";
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 1.4;
+  font-family: 'Clear Sans';
+}
+strong {
+  font-weight: 500;
+}
+.container {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #dadde1;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 30px 0px rgba(216, 220, 224, 0.35);
+  width: 290px;
+  height: 432px;
+  text-align: center;
+  color: #60697d;
+}
+.card__header {
+  background-color: #f8f9f9;
+  width: 290px;
+  height: 165px;
+  padding-top: 22px;
+}
+.card__header h3 {
+  position: relative;
+  font-size: 30px;
+  line-height: 44px;
+  margin: 0;
+  font-weight: 300;
+  padding-bottom: 9px;
+  margin-bottom: 15px;
+}
+.card__header h3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -14px;
+  width: 28px;
+  height: 1px;
+  background-color: #60697d;
+  opacity: 0.1;
+}
+.card__desc {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  padding-top: 24px;
+}
+.card__desc ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+}
+.card__desc ul:after {
+  content: "";
+  display: block;
+  margin-bottom: 12px;
+  position: absolute;
+  width: 28px;
+  height: 1px;
+  background-color: #60697d;
+  opacity: 0.1;
+  bottom: 0;
+  left: 50%;
+  margin-left: -14px;
+}
+.card__desc ul li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.card__price {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 24px;
+}
+.card--model-s {
+  -webkit-transform: translate(10px, -33px);
+  -ms-transform: translate(10px, -33px);
+  -o-transform: translate(10px, -33px);
+  transform: translate(10px, -33px);
+  z-index: 1;
+}
+.card--model-x {
+  color: #fff;
+  background: rgba(115, 120, 125, 0.95);
+  -webkit-transform: translate(-23px, 10px);
+  -ms-transform: translate(-23px, 10px);
+  -o-transform: translate(-23px, 10px);
+  transform: translate(-23px, 10px);
+}
+.card--model-x .card__header {
+  background: #656a72;
+}
+.button {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #ea525c;
+  display: inline-block;
+  font-weight: 700;
+  width: 126px;
+  height: 36px;
+  border-radius: 18px;
+  padding-top: 8px;
+  text-decoration: none;
+}
